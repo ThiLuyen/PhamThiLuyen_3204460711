@@ -1,19 +1,19 @@
  
-package phamthiluyen_0711;
 
+package phamthiluyen_0711;
 import java.util.ArrayList;
 
-public class Exercise2 {
+public class Exercise3 {
     public static void main(String[] args) {
-        ArrayList<String>colors=new ArrayList<>();
-        colors.add("Red");
-        colors.add("Blue");
-        colors.add("Black");
-        colors.add("White");
-        for (int i = 0; i < colors.size(); i++) {
-            System.out.println(colors.get(i));
+        ArrayList<Double> gia = new ArrayList<>();
+        gia.add(17.5);
+        gia.add(8.5);
+        gia.add(12.99);
+        gia.add(3.99);
+        gia.add(29.5);
+        System.out.println("Danh sach!");
+        for (int i = 0; i < gia.size(); i++) {
+            System.out.println("Gia " + (i) + ": " + gia.get(i));
         }
-        colors.set(1,"Yellow");
-        System.out.println(colors);
     }
 }
