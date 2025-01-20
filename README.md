@@ -3,15 +3,17 @@ package phamthiluyen_0711;
 
 import java.util.ArrayList;
 
-public class Exercise1 {
+public class Exercise2 {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>();
-        for (int i = 1; i <= 10; i++) {
-            numbers.add(i);
+        ArrayList<String>colors=new ArrayList<>();
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Black");
+        colors.add("White");
+        for (int i = 0; i < colors.size(); i++) {
+            System.out.println(colors.get(i));
         }
-        System.out.println("Cac phan tu:");
-        for (Integer number : numbers) {
-            System.out.print(number + " ");
-        }
+        colors.set(1,"Yellow");
+        System.out.println(colors);
     }
 }
